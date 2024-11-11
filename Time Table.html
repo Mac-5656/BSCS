@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BS CS First Semester Timetable</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f7fc;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            background: #fff;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        h2 {
+            text-align: center;
+            font-size: 2rem;
+            padding: 20px;
+            background-color: #01579b;
+            color: white;
+            border-radius: 10px 10px 0 0;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 15px;
+            text-align: center;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+        }
+        th {
+            background: linear-gradient(135deg, #4fc3f7, #0288d1);
+            color: #fff;
+            font-weight: 600;
+        }
+        td {
+            background-color: #f7f9fc;
+            color: #333;
+            font-weight: 500;
+            border: 1px solid #ddd;
+        }
+        td:hover {
+            transform: scale(1.05);
+            background-color: #e3f2fd;
+            cursor: pointer;
+        }
+        .highlight-yellow {
+            background-color: #fdd835;
+            color: #212121;
+            font-weight: 600;
+        }
+        .highlight-blue {
+            background-color: #0288d1;
+            color: white;
+        }
+        .highlight-green {
+            background-color: #8bc34a;
+            color: white;
+        }
+        .highlight-orange {
+            background-color: #ff7043;
+            color: white;
+        }
+        .highlight-gray {
+            background-color: #9e9e9e;
+            color: white;
+        }
+        .highlight-dark-gray {
+            background-color: #212121;
+            color: white;
+        }
+        .break {
+            background-color: #ffeb3b;
+            font-weight: 600;
+        }
+        .header-time {
+            background: #81d4fa;
+            color: #01579b;
+            font-weight: 600;
+        }
+        .container td, .container th {
+            border-radius: 8px;
+        }
+        .container th {
+            box-shadow: inset 0 3px 6px rgba(0, 0, 0, 0.1);
+        }
+        @media only screen and (max-width: 768px) {
+            .container {
+                width: 100%;
+            }
+            th, td {
+                font-size: 0.9rem;
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>BS CS First Semester Timetable - Fall 2024</h2>
+    <table>
+        <tr>
+            <th class="header-time">Lecture No.</th>
+            <th class="header-time">1</th>
+            <th class="header-time">2</th>
+            <th class="header-time">3</th>
+            <th class="header-time">4</th>
+            <th class="header-time">5</th>
+            <th class="header-time" colspan="2">Break</th>
+            <th class="header-time">6</th>
+            <th class="header-time">7</th>
+            <th class="header-time">8</th>
+        </tr>
+        <tr>
+            <td class="highlight-green">Monday</td>
+            <td class="highlight-yellow"></td>
+            <td class="highlight-yellow"></td>
+            <td class="highlight-gray">CSIT-303<br>Dr. Nasir</td>
+            <td class="highlight-blue">CSIT-301 + BBA<br>Mam Mutyyba</td>
+            <td class="highlight-gray">ENG-301 + BBA<br>Rao Kamal</td>
+            <td class="break" colspan="2">1:00 - 1:30</td>
+            <td class="highlight-gray">ENG-301 + BBA<br>Rao Kamal</td>
+            <td class="highlight-yellow">Sports Complex</td>
+            <td class="highlight-yellow"></td>
+        </tr>
+        <tr>
+            <td class="highlight-green">Tuesday</td>
+            <td class="highlight-yellow"></td>
+            <td class="highlight-orange">PHYS-301<br>Mr. Zaib Niazi</td>
+            <td class="highlight-gray">CSIT-505<br>Hafiz Umar Farooq</td>
+            <td class="highlight-blue">CSIT-301 + BBA<br>Mam Mutyyba</td>
+            <td class="highlight-gray">ENG-301 + BBA<br>Rao Kamal</td>
+            <td class="break" colspan="2">1:00 - 1:30</td>
+            <td class="highlight-yellow"></td>
+            <td class="highlight-yellow"></td>
+            <td class="highlight-yellow"></td>
+        </tr>
+        <tr>
+            <td class="highlight-green">Wednesday</td>
+            <td class="highlight-yellow"></td>
+            <td class="highlight-orange">PHYS-301<br>Mr. Zaib Niazi</td>
+            <td class="highlight-orange">PHYS-301<br>Mr. Zaib Niazi</td>
+            <td class="highlight-orange">PHYS-301<br>Mr. Zaib Niazi</td>
+            <td class="highlight-gray">CSIT-303<br>Dr. Nasir</td>
+            <td class="break" colspan="2">1:00 - 1:30</td>
+            <td class="highlight-gray">ENG-301 + BBA<br>Rao Kamal</td>
+            <td class="highlight-gray">CSIT-303 (Practical)<br>Dr. Nasir</td>
+            <td class="highlight-yellow"></td>
+        </tr>
+        <tr>
+            <td class="highlight-green">Thursday</td>
+            <td class="highlight-yellow"></td>
+            <td class="highlight-dark-gray">CSIT-505<br>Hafiz Umar Farooq</td>
+            <td class="highlight-dark-gray">QRG-301<br>Rao Basharat</td>
+            <td class="highlight-dark-gray">QRG-301<br>Rao Basharat</td>
+            <td class="highlight-dark-gray">QRG-301<br>Rao Basharat</td>
+            <td class="break" colspan="2">1:00 - 1:30</td>
+            <td class="highlight-dark-gray">CSIT-303<br>Dr. Nasir</td>
+            <td class="highlight-yellow"></td>
+            <td class="highlight-yellow"></td>
+        </tr>
+        <tr>
+            <td class="highlight-green">Friday</td>
+            <td class="highlight-yellow"></td>
+            <td class="highlight-yellow"></td>
+            <td class="highlight-yellow"></td>
+            <td class="highlight-yellow"></td>
+            <td class="highlight-yellow"></td>
+            <td class="break" colspan="2">1:00 - 1:30</td>
+            <td class="highlight-yellow">Library</td>
+            <td class="highlight-yellow">Sports Complex</td>
+            <td class="highlight-yellow"></td>
+        </tr>
+    </table>
+</div>
+
+</body>
+</html>
